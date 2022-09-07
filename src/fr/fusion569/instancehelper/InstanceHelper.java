@@ -3,7 +3,6 @@ package fr.fusion569.instancehelper;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -39,15 +38,5 @@ public final class InstanceHelper {
         } catch(MalformedURLException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
-        final Object obj = newInstance(new File("C://Users/Papa/Desktop/"), "User", new Class[]{
-                String.class, int.class
-        }, "Paul", 15);
-        final Field f = obj.getClass().getDeclaredField("age");
-
-        f.setAccessible(true);
-        System.out.println(f.get(obj));
     }
 }
