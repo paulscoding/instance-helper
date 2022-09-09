@@ -38,8 +38,6 @@ public class User {
 #### Main Class:
 
 ```java
-import fr.fusion569.instancehelper.InstanceHelper;
-
 import java.io.File;
 
 public class Main {

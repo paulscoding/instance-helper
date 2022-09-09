@@ -1,4 +1,4 @@
-package fr.fusion569.instancehelper;
+package fr.paulscoding.instancehelper;
 
 import java.io.File;
 import java.io.IOException;
